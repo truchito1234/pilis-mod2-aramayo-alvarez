@@ -22,5 +22,5 @@ function topFunction() {
         top: 0,
         behavior: 'smooth'
     });
-    mybutton.style.backgroundColor = "#ffffff";
+    mybutton.style.backgroundColor = "#284b63";
 }

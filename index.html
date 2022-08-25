@@ -12,10 +12,10 @@
     <link rel="icon" type="image/x-icon" href="assets/imgaes/" />
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
     <link href="css/styles.css" rel="stylesheet" />
-    <title>Tematica</title>        
+    <title>Tematica</title>
 </head>
 
-<body>            
+<body>
     <!-- Header -->
     <header class="header">
         <div class="logo">
@@ -27,13 +27,9 @@
         <ul class="menu">
             <li><a href="#nosotros">Nosotros</a></li>
             <li><a href="#evento">El evento</a></li>
-            <li><a href="#registro">Registrate </a></li>              
-        </ul>        
-        <!-- boton wp -->        
-        <div class="container-boton1">
-            <a href="https://walink.co/5d5951" target="https://walink.co/5d5951">
-                <img class="boton1" src="icono.png" alt="whatsapp">
-            
+            <li><a href="#registro">Registrate </a></li>
+        </ul>
+
     </header>
     <!-- Principal -->
     <main id="principal">
@@ -41,16 +37,17 @@
             <div class="section__container section__container-nomargin">
                 <div class="card__copada">
                     <h1>Home</h1>
-                </div>               
-                    <img src="assets/imagenes/imagen1.jpg"  width="800" height="600" alt="">                    
                 </div>
+                <img class="imagen-responsiva" src="assets/imagenes/imagen1.jpg" width="800" height="600" alt="">
             </div>
         </section>
         <section id="nosotros">
             <div class="section__container section__container-margin">
                 <div class="card__copada">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IPOnkPQG_YU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="container-iframe">
+                        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/IPOnkPQG_YU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
+                </div>
                 <div class="card__copada">
                     <h1>Nosotros</h1>
                 </div>
@@ -60,66 +57,80 @@
             <div class="section__container section__container-margin">
                 <div class="card__copada">
                     <h1>Evento</h1>
-                </div>                
-                    <img src="assets/imagenes/imagen2.jpg" alt="" >
                 </div>
+                <img class="imagen-responsiva" src="assets/imagenes/imagen2.jpg" alt="">
             </div>
         </section>
         <section id="registro" class="container-fluid .section__container-margin">
             <div class="section__container section__container-margin">
                 <div class="card__copada">
                     <h1>Registro</h1>
-                </div>                 
-                    <main>
-                        <h1>Formulario De Contacto </h1> 
-                        <fieldset id="login">
-                            <legend>dejanos tus datos</legend>
-                            <form action=""></form>                            
-                            <ul>
-                                comercio 
-                                <input type="text" name="comercio" id="comercio">
-                                <label for="comercio"></label>                                                                                      
-                            </ul>
-                            <ul>
-                                titular                                  
-                                <input type="text" name="titular" id="titular">
-                            
-                                <label for="titular"></label>            
-                            </ul>       
-                            <ul>
-                                celular 
-                               
-                                <input type="tel" name="celular" id="celular">
-                            </ul>                        
-                                    
-                            <input type="button" value="enviar">
-                            
-                          
-                          
-                        </fieldset>         
-                                          
-                        
-                    </main>
                 </div>
+                <main>
+                    <h1>Formulario De Contacto </h1>
+                    <fieldset id="login">
+                        <legend>dejanos tus datos</legend>
+                        <form action=""></form>
+                        <ul>
+                            comercio
+                            <input type="text" name="comercio" id="comercio">
+                            <label for="comercio"></label>
+                        </ul>
+                        <ul>
+                            titular
+                            <input type="text" name="titular" id="titular">
+
+                            <label for="titular"></label>
+                        </ul>
+                        <ul>
+                            celular
+
+                            <input type="tel" name="celular" id="celular">
+                        </ul>
+
+                        <input type="button" value="enviar">
+
+
+
+                    </fieldset>
+
+
+                </main>
             </div>
-        </section>        
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
     <footer class="section__container section__container-centered">
         <div class="card__footer">
-            <h1>Footer</h1>
+            <div class="box-ciudad">
+                <h3 id="mensaje-del-tiempo"></h3>
+            </div>
+            <div class="box-temperatura">
+                <img id="card__img" src="" width="150" height="150" alt="Weather in San Salvador de Jujuy, AR">
+                <h1 id="temperatura"></h1>
+            </div>
+            <div class="box-estado-clima">
+                <h3 id="tipo-de-clima"></h3>
+            </div>
         </div>
         <button id="back-to-top" class="back-to-top reveal" onclick="topFunction()">
         <i class="fa fa-angle-up fa-2x"></i>
       </button>
+        <!-- boton wp -->
+        <div class="container-boton1">
+            <a href="https://walink.co/5d5951" target="https://walink.co/5d5951">
+                <img class="boton1" src="icono.png" alt="whatsapp"></a>
+        </div>
+
     </footer>
 
     <!-- JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-    <script src="js/script.js "></script>
+    <script src="js/scripts.js "></script>
     <script src="js/scroll.js"></script>
     <script src="js/go-top-button.js"></script>
 </body>
