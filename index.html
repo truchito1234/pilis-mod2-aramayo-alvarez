@@ -11,7 +11,7 @@
     <meta http-equiv="language" content="es" />
     <link rel="icon" type="image/x-icon" href="assets/imgaes/" />
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />         
     <title>Tematica</title>
 </head>
 
@@ -70,37 +70,26 @@
                     <h1>Formulario De Contacto </h1>
                     <fieldset id="login">
                         <legend>dejanos tus datos</legend>
-                        <form action=""></form>
-                        <ul>
-                            comercio
-                            <input type="text" name="comercio" id="comercio">
-                            <label for="comercio"></label>
-                        </ul>
-                        <ul>
-                            titular
-                            <input type="text" name="titular" id="titular">
-
-                            <label for="titular"></label>
-                        </ul>
-                        <ul>
-                            celular
-
-                            <input type="tel" name="celular" id="celular">
-                        </ul>
-
-                        <input type="button" value="enviar">
-
-
-
+                        <form action="#" id="formulario" method="post"></form>                        
+                         <div>
+                            <label for="comercio">Comercio</label>
+                            <input type="text"name="" id="comercio">
+                        </div>   
+                         <div>
+                            <label for="titular">Titular</label>
+                            <input type="text"name="" id="titular">
+                        </div>   
+                         <div>
+                            <label for="telefono">Telefono</label>
+                            <input type="telefono" name="" id="telefono">
+                        </div>                        
+                           <br> <input type="button" id="enviar" value="enviar" >
                     </fieldset>
-
-
                 </main>
             </div>
             </div>
         </section>
     </main>
-
     <!-- Footer -->
     <footer class="section__container section__container-centered">
         <div class="card__footer">
@@ -133,6 +122,9 @@
     <script src="js/scripts.js "></script>
     <script src="js/scroll.js"></script>
     <script src="js/go-top-button.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/sweetalert.js"></script>
+    
 </body>
 
 </html>
