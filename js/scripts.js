@@ -1,13 +1,14 @@
 let lat = -24.184049;
 let lon = -65.3309975;
 let lang = 'es';
-let units = 'metrics';
 let APIkey = '4523b1856fc697a79b828fdcfbfdd85f';
-let cityID = 3836564;
-let url = 'http://api.openweathermap.org/data/2.5/weather?id=' + cityID + '&appid=' + APIkey + '&lang=' + lang + '';
+//let url = 'http://api.openweathermap.org/data/2.5/weather?id=' + cityID + '&appid=' + APIkey + '&lang=' + lang + '';
 
 
-//http://api.openweathermap.org/data/2.5/weather?id=3836564&appid=f4523b1856fc697a79b828fdcfbfdd85
+let url = 'http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&appid=' + APIkey + '&lang=' + lang + '';
+
+//http://api.openweathermap.org/data/2.5/weather?lat=-24.184049&lon=-65.3309975&appid=6fa4f5eafdb2f1d90d1dcc06b2ae238a
+
 /*  Tutorial
     https://w3collective.com/fetch-display-api-data-javascript/
 */
@@ -40,12 +41,18 @@ function displayImagen(codigo) {
     document.getElementById('card__img').src = getImage(codigo);
 }
 
+function displayError(status) {
+    document.getElementById('mensaje-del-tiempo').innerHTML = "No se pudo cargar";
+    document.getElementById('temperatura').innerHTML = "ERROR " + status;
+    document.getElementById('card__img').src = 'https://www.iconpacks.net/icons/2/free-sad-face-icon-2691-thumb.png';
+}
 
 async function fetchClima() {
     try {
         const response = await fetch(url);
 
         if (!response.ok) {
+            displayError(response.status);
             throw new Error(`HTTP error: ${response.status}`);
         }
         const data = await response.json();
@@ -66,6 +73,7 @@ async function fetchClima() {
 
     } catch (error) {
         console.error(`No se pudo obtener el clima: ${error}`);
+
     }
 }
 

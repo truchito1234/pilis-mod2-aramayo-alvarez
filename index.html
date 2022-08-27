@@ -11,7 +11,7 @@
     <meta http-equiv="language" content="es" />
     <link rel="icon" type="image/x-icon" href="assets/imgaes/" />
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-    <link href="css/styles.css" rel="stylesheet" />         
+    <link href="css/styles.css" rel="stylesheet" />
     <title>Tematica</title>
 </head>
 
@@ -36,56 +36,78 @@
         <section id="home">
             <div class="section__container section__container-nomargin">
                 <div class="card__copada">
-                    <h1>Home</h1>
+                    <div class="cajita__rara">
+                        <h1>Expo Juy 2022</h1>
+                        <h2>Los invitamos a participar de una nueva Expo Juy</h2>
+                        <p>"Juntos potenciamos el comercio jujeño, de Jujuy al mundo."</p>
+                    </div>
                 </div>
                 <img class="imagen-responsiva" src="assets/imagenes/imagen1.jpg" width="800" height="600" alt="">
             </div>
         </section>
-        <section id="nosotros">
-            <div class="section__container section__container-margin">
+        <section id="evento">
+            <div class="section__container section__container-margin wrapper">
                 <div class="card__copada">
                     <div class="container-iframe">
                         <iframe class="responsive-iframe" src="https://www.youtube.com/embed/IPOnkPQG_YU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="card__copada">
-                    <h1>Nosotros</h1>
+                    <div class="cajita__rara">
+                        <h2>El evento</h2>
+                        <p>Sobre la Expo Juy 2022.</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="evento">
+        <section id="nosotros">
             <div class="section__container section__container-margin">
                 <div class="card__copada">
-                    <h1>Evento</h1>
+                    <div class="cajita__rara">
+                        <h2>Nosotros</h2>
+                        <p>Organizadores</p>
+                    </div>
+
                 </div>
                 <img class="imagen-responsiva" src="assets/imagenes/imagen2.jpg" alt="">
             </div>
         </section>
         <section id="registro" class="container-fluid .section__container-margin">
             <div class="section__container section__container-margin">
-                <div class="card__copada">
-                    <h1>Registro</h1>
+                <div class="card__copada display--none">
+                    <div class="cajita__rara">
+                        <h2>Sum&aacute;te al evento para potenciar el comercio local.</h2>
+                        <p>Luego te contactaremos.</p>
+                    </div>
+
                 </div>
-                <main>
-                    <h1>Formulario De Contacto </h1>
-                    <fieldset id="login">
-                        <legend>dejanos tus datos</legend>
-                        <form action="#" id="formulario" method="post"></form>                        
-                         <div>
-                            <label for="comercio">Comercio</label>
-                            <input type="text"name="" id="comercio">
-                        </div>   
-                         <div>
-                            <label for="titular">Titular</label>
-                            <input type="text"name="" id="titular">
-                        </div>   
-                         <div>
-                            <label for="telefono">Telefono</label>
-                            <input type="telefono" name="" id="telefono">
-                        </div>                        
-                           <br> <input type="button" id="enviar" value="enviar" >
-                    </fieldset>
-                </main>
+                <div class="card__copada">
+                    <h1>Formulario de contacto </h1>
+                    <form action="#" id="formulario" method="post">
+                        <fieldset id="login">
+                            <legend>Dejanos tus datos</legend>
+                            <div>
+                                <label class="etiqueta" for="comercio">Comercio</label>
+                                <input class="entrada" type="text" name="comercio" id="comercio">
+                            </div>
+                            <div>
+                                <label class="etiqueta" for="titular">Titular</label>
+                                <input class="entrada" type="text" name="titular" id="titular">
+                            </div>
+                            <div>
+                                <label class="etiqueta" for="telefono">Telefono</label>
+                                <input class="entrada" type="tel" name="telefono" id="telefono" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                            </div>
+
+
+                            <div id="peligro" class="texto-peligro"></div>
+
+                        </fieldset>
+
+
+                        <br> <input type="button" id="enviar" value="Enviar">
+                    </form>
+                </div>
             </div>
             </div>
         </section>
@@ -124,7 +146,7 @@
     <script src="js/go-top-button.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/sweetalert.js"></script>
-    
+
 </body>
 
 </html>
